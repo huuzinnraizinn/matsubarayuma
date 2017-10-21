@@ -1,0 +1,55 @@
+﻿/*******************
+
+テーブルのCSS
+
+*******************/
+table , td, th {
+	color: white;
+	border: 1px solid #dddddd;
+	border-collapse: collapse;
+	font-size: 130%;
+	width: 100%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	vertical-align: middle;
+	/*background-color: white;*/
+}
+table a {
+	display: block;       /* リンクをブロックレベル化して表示 */
+	vertical-align:middle;
+	text-decoration: none;
+}
+td, th {
+	padding: 3px;
+	height: 50px;
+	width : 25% ; /* 未対応ブラウザ用フォールバック */
+  	width : -webkit-calc(100% / 4) ;
+  	width : calc(100% / 4) ;
+	vertical-align: middle;
+}
+td{
+	vertical-align:middle;
+  	display:table-cell;
+}
+tr.top{
+	font-weight: bolder;
+	font-size: 110%;
+}
+tr td:nth-child(1) {
+	white-space: nowrap;
+}
+/*.time{
+	font-weight: bolder;
+	display: inline-block;
+	white-space:nowrap;
+}*/
+.stage{
+	white-space:nowrap;
+}
+.ground{
+	width: 25%;
+}
+.gym{
+	width: 25%;
+}
